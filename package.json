@@ -1,0 +1,14 @@
+{
+  "name": "products-oop",
+  "version": "1.0.0",
+  "description": "a js app with oop",
+  "main": "App.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "Gaspar Dolcemascolo",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
