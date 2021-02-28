@@ -2,7 +2,7 @@
   "name": "products-oop",
   "version": "1.0.0",
   "description": "a js app with oop",
-  "main": "App.js",
+  "main": "src/App.js",
   "scripts": {
     "start": "live-server"
   },

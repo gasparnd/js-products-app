@@ -14,19 +14,23 @@
 		</a>
 	</nav>
 
+	<div id="message"></div>
+
 	<main class="Hero">
-		<div class="Hero__card">
-			<h3 class="Hero__card-title">
-				Add Product
-			</h3>
-			<form class="Hero__card-body" id="product-form">
-				<input placeholder="Product Name" class="form-input" id="product-name" type="text">
-				<input placeholder="Product Price" step="0.01" class="form-input" id="product-price" type="number">
-				<input placeholder="Product Year" min="1970" class="form-input" id="product-year" type="number">
-				<input type="submit" id="form-button" class="form-button" value="Add" />
-			</form>
+		<div class="Hero__app">
+			<div class="Hero__card">
+				<h3 class="Hero__card-title">
+					Add Product
+				</h3>
+				<form class="Hero__card-body" id="product-form">
+					<input placeholder="Product Name" class="form-input" id="product-name" type="text">
+					<input placeholder="Product Price" step="0.01" class="form-input" id="product-price" type="number">
+					<input placeholder="Product Year" min="1970" class="form-input" id="product-year" type="number">
+					<input type="submit" id="form-button" class="form-button" value="Add" />
+				</form>
+			</div>
+			<div id="product-list" class="Hero__products"></div>
 		</div>
-		<div id="product-list" class="Hero__products"></div>
 	</main>
 
 	<script type="text/javascript" src="./src/App.js"></script>

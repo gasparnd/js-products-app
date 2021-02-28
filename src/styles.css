@@ -1,9 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: Helvetica;
-	overflow: hidden;
-	box-sizing: border-box;
+	font-family: Helvetica;	
 }
 
 .NavBar {
@@ -16,28 +14,33 @@
 
 .NavBar__brand {
 	font-size: 2rem;
-	color: black;
+	color: #0e49b5;
 	text-decoration: none;
 }
 
-.Hero {
+.Hero__app {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr auto;
 	justify-items: center;
+	position: relative;
+	padding-top: 5rem;
 }
 
 .Hero__card {
 	border: 1px solid gray;
 	border-radius: 25px;
 	width: 40vw;
-	/*height: 300px;*/
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
+	height: max-content;
 }
 
 .Hero__card-title {
-	background: lightgray;
+	background: #0e49b5;
 	width: 100%;
+	color: white;
 	text-align: center;
 	padding: 1rem 0;
 }
@@ -52,15 +55,16 @@
 	font-family: Helvetica;
 	width: 100%;
 	margin-bottom: .5rem;
+	box-sizing: border-box;
 }
 
 .form-button {
 	width: 100%;
-	background: lightblue;
-	border: 1px solid lightblue;
+	background: #0e49b5;
+	border: 1px solid #0e49b5;
 	border-radius: 25px;
 	font-family: Helvetica;
-	color: black; 	
+	color: white; 	
 	padding: .5rem;
 	cursor: pointer;
 	outline: none;
@@ -72,4 +76,42 @@
 	border: 1px solid black;
 	border-radius: 5px;
 	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.Hero__products-product-button {
+	background: #c70039;
+	border: 1px solid #c70039;
+	color: white;
+	padding: .5rem;
+	border-radius: 15px;
+	margin-left: 1rem;
+	outline: none;
+	cursor: pointer;
+}
+
+.alert {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.add-message, .remove-message {
+	color: white;
+	padding: 1rem;
+	border-radius: 15px;
+	width: max-content;
+	margin: 1rem 2rem 0;
+	text-align: center;
+}
+
+.add-message {
+	background: #16c79a;
+	border: 1px solid #16c79a;
+}
+
+.remove-message {
+	background: #28abb9;
+	border: 1px solid #28abb9;
 }
