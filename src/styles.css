@@ -95,6 +95,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 }
 
 .add-message, .remove-message {
@@ -114,4 +115,26 @@
 .remove-message {
 	background: #28abb9;
 	border: 1px solid #28abb9;
+}
+
+@media screen and (max-width: 750px) {
+	.Hero__app {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr auto;
+		justify-items: center;
+		align-items: center;
+		padding-top: 5rem;
+		grid-gap: 2rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.Hero {
+		padding: 0 1rem;
+	}
+
+	.Hero__card {
+		width: 100%;
+	}
 }
